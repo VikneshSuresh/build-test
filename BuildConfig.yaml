@@ -25,5 +25,5 @@ spec:
   source:
     type: Git
     git:
-      uri: 'https://github.com/VikneshSuresh/build-test'
+      url: 'https://github.com/VikneshSuresh/build-test'
   runPolicy: Serial
