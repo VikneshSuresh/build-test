@@ -4,20 +4,23 @@ metadata:
   name: build-test2
   namespace: build-test
   labels:
-    build: build-test2
+    build: labs
 spec:
   nodeSelector: null
   output:
     to:
       kind: DockerImage
-      name: $APP_IMAGE
+      name: '10.168.0.76:9000/dev-registry/helloworld-test:latest'
     pushSecret:
       name: nexus-secret
   resources: {}
   strategy:
     type: Docker
     dockerStrategy:
-      dockerfilePath: Dockerfile
+      from:
+        kind: ImageStreamTag
+        namespace: build-test
+        name: 'golang:alpine'
   postCommit: {}
   source:
     type: Git
