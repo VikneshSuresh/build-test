@@ -1,4 +1,4 @@
-kind: Build
+kind: BuildConfig
 apiVersion: build.openshift.io/v1
 metadata:
   name: build-test2
@@ -10,7 +10,7 @@ spec:
   output:
     to:
       kind: DockerImage
-      name: 10.168.0.76:9000/dev-registry/helloworld-test:latest
+      name: $APP_IMAGE
     pushSecret:
       name: nexus-secret
   resources: {}
