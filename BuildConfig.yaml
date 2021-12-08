@@ -1,7 +1,7 @@
 kind: Build
 apiVersion: build.openshift.io/v1
 metadata:
-  name: hello-world-test2
+  name: build-test2
   namespace: build-test
   labels:
     build: build-test2
