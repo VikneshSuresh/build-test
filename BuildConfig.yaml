@@ -10,7 +10,7 @@ spec:
   output:
     to:
       kind: DockerImage
-      name: '10.168.0.76:9000/dev-registry/helloworld-test:latest'
+      name: 10.168.0.76:9000/dev-registry/helloworld-test:latest
     pushSecret:
       name: nexus-secret
   resources: {}
