@@ -1,4 +1,4 @@
-kind: BuildConfig
+kind: Build
 apiVersion: build.openshift.io/v1
 metadata:
   name: build-test2
