@@ -4,7 +4,7 @@ metadata:
   name: build-test-$VERSION
   namespace: build-test
   labels:
-    build: build-test2
+    build: build-test-$VERSION
 spec:
   nodeSelector: null
   output:
